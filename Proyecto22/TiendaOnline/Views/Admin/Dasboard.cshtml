@@ -67,11 +67,6 @@
                                     </a> 
                                 </nav>
                             </div>
-
-                            <a class="nav-link text-white-50 fw-bold" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Charts
-                            </a>
                             <a class="nav-link text-white-50 fw-bold" href="tables.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tables
@@ -90,70 +85,97 @@
                         </ol>
                            <div class="row">
                               
-                            <div class="col-xl-3 col-md-6">
+                            <div class="col-xl-6 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
                                    
+                                    <div class="card-header text-center">Clientes</div>
                                     @if(ViewBag.Clientes != null)
                                         {
-                                            <div class="card-header text-black-50 text-center">@ViewBag.Clientes</div>
+                                            <div class="card-body text-white-50 fs-4 text-center">@ViewBag.Clientes</div>
                                         }
                                         else
                                         {
-                                            <div class="card-header text-black-50 text-center">0</div>
+                                            <div class="card-body text-black-50 fs-4 text-center">0</div>
                                         }
-                                     <div class="card-body text-center">Clientes</div>
+                                     
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                    <a asp-area="" class="nav-link text-white-50" asp-controller="General" asp-action="Cliente">
+                                        <i class="bi bi-people"></i> <sapan class="mx-2">Clientes</sapan>
+                                    </a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body">Empleado</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
-                                <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Proveedor</div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="Proveedor/Proveedor">View Details</a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-md-6">
+                           
+
+                             <div class="col-xl-6 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">Usuario</div>
+                                    <div class="card-header text-center">Empleados</div>
+                                    @if(ViewBag.empleado != null)
+                                        {
+                                            <div class="card-body text-white-50 fs-4 text-center">@ViewBag.empleado</div>
+                                        }
+                                        else
+                                        {
+                                            <div class="card-body text-white-50 fs-4 text-center">0</div>
+                                        }
+                                    
                                     <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <a asp-area="" class="nav-link text-white-50" asp-controller="General" asp-action="Empleado">
+                                            <i class="bi bi-person-bounding-box"></i> <sapan class="mx-2">Empleados</sapan>
+                                        </a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
+
+
+                            <div class="col-xl-6 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                   <div class="card-header text-center">Proveedor</div>
+                                    @if(ViewBag.proveedor != null)
+                                        {
+                                            <div class="card-body text-white-50 fs-4 text-center">@ViewBag.proveedor</div>
+                                        }
+                                        else
+                                        {
+                                            <div class="card-body text-white-50 fs-4 text-center">0</div>
+                                        }
+                                     
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a asp-area="" class="nav-link text-white-50" asp-controller="Producto" asp-action="Proveedor">
+                                        <i class="bi bi-truck"></i> <sapan class="mx-2">Proveedor</sapan>
+                                    </a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="col-xl-6 col-md-6">
+                                <div class="card bg-dark text-white mb-4">
+                                   <div class="card-header text-center">Usuarios</div>
+                                    @if(ViewBag.usuario != null)
+                                        {
+                                            <div class="card-body text-white-50 fs-4 text-center">@ViewBag.usuario</div>
+                                        }
+                                        else
+                                        {
+                                            <div class="card-body text-white-50 fs-4 text-center">0</div>
+                                        }
+                                     
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a asp-area="" class="nav-link text-white-50" asp-controller="General" asp-action="Usuario">
+                                        <i class="bi bi-person-circle"></i> <sapan class="mx-2">Usuario</sapan>
+                                    </a> 
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
                         </div>
-@*                        <table class="table table-striped">
-                         <thead>
-                            <tr>
-                              <th scope="col">#</th>
-                              <th scope="col">First</th>
-                              <th scope="col">Last</th>
-                              <th scope="col">Handle</th>
-                            </tr>
-                         </thead>
-                         <tbody>
-                            <tr>
-                              <th scope="row">1</th>
-                              <td>Mark</td>
-                              <td>Otto</td>
-                             
-                            </tr>
-                        </tbody>
-                        </table>*@
+
                     </div>
                 </main>
             </div>

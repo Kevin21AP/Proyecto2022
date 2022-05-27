@@ -53,7 +53,6 @@ namespace TiendaOnline.Controllers
         {
             int id = comp.ArticuloID;
             var subTotal = from articulo in _db.Articulos
-                           from compra in _db.Compras
                            where articulo.ArticuloId == id
                            select new
                            {

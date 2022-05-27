@@ -12,5 +12,7 @@ namespace TiendaOnline.Services
         public List<Usuarios> GetAll();
 
         public Usuarios loadUsuario(Usuarios us);
+
+        public Usuarios Login(string email, string pass);
     }
 }

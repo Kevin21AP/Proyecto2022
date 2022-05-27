@@ -37,6 +37,12 @@ namespace TiendaOnline.Repository
             return listarUser;
         }
 
+        public Usuarios Login(string email, string pass)
+        {
+            var login = _db.Usuarios.Where(x => x.Correo == email && x.Clave == pass).FirstOrDefault();
+
+            return login;
+        }
         public void UpdateUsuario(Usuarios us)
         {
             _db.Usuarios.Update(us);

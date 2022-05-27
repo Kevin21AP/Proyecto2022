@@ -1,4 +1,4 @@
-﻿@model Proveedores
+﻿@model Empleados
 @{
     int v = 1;
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
@@ -80,7 +80,7 @@
             <div id="layoutSidenav_content" class="container">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4 text-black-50">Listado de Proveedores</h1>
+                        <h1 class="mt-4 text-black-50">Listado de Empleados</h1>
                         <ol class="breadcrumb mb-4">
                            <li class="breadcrumb-item ">
                                 <a asp-area="" class="text-black-50" asp-controller="Admin" asp-action="Dasboard">
@@ -89,7 +89,7 @@
                            </li>
                         </ol>
 
-                        @*---------------- Listado de Proveedor ------------------------------------------- *@
+                        @*---------------- Listado de articulos------------------------------------------- *@
                      <div class="container-fluid">
                       @*   ----------------------- Modal para Agregar ------------------------*@
 
@@ -103,7 +103,7 @@
                               <div class="modal-dialog">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                     <h3 class=" text-center mx-3 texto_login">Agregar Proveedor</h3>
+                                     <h3 class=" text-center mx-3 texto_login">Agregar Empleados</h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                   </div>
                                   <div class="modal-body">
@@ -111,10 +111,10 @@
                                    @* ------------------------- Formulario ------------------------------*@
                                     
                                    <div class="col-sm">
-                                            <form asp-controller="Producto" asp-action="GuardarProveedor" class="row g-3 p-1">
+                                            <form asp-controller="General" asp-action="GuardarEmpleado" class="row g-3 p-1">
                                             <div class="form-outline mb-3 mt-3">
-                                                <span class="form-text texto_login">Nombre:</span>
-                                                <input type="text" asp-for="Nombre" class="container-fluid p-2 bg-light" placeholder=" Nombre "/>
+                                                <span class="form-text texto_login">Nombre</span>
+                                                <input type="text" asp-for="Nombre" class="container-fluid p-2 bg-light" placeholder=" Nombre"/>
 @*                                                <span asp-validation-for="Nombre"></span>*@
                                             </div>
 
@@ -122,18 +122,27 @@
                                                 <span class="form-text texto_login">Apellido:</span>
                                                 <input type="text" asp-for="Apellido" class="container-fluid p-2 bg-light" placeholder="Apellido">
                                             </div>
-                                            <div class="form-outline mb-3">
+
+                                            <div class="col-md-6 mb-3">
                                                 <span class="form-text texto_login">Direccion:</span>
                                                 <input type="text" asp-for="Direccion" class="container-fluid p-2 bg-light" placeholder="Direccion">
                                             </div>
 
-                                            <div class="form-outline mb-3">
+                                            <div class="col-md-6 mb-3 mt-3">
                                                 <span class="form-text texto_login">Telefono:</span>
                                                 <input type="text" asp-for="Telefono" class="container-fluid p-2 bg-light" placeholder="Telefono">
                                             </div>
+                                                <div class="col-md-6 mb-3">
+                                                 
+                                                        <div class="form-group mb-3">
+                                                            <select asp-for="UsuarioID" class="form-control" asp-items="@(new SelectList(ViewBag.usuario,"UsuarioId","Correo"))">
+                                                                <option class="nav-link disabled">Seleccionar</option>
+                                                            </select>
+                                                        </div>  
 
+                                                </div>
                                              <div class="container mb-3">
-                                                <button type="submit" class="btn btn-outline-primary mt-auto  container-fluid" >Guardar</button>
+                                                <button type="submit" class="btn btn-outline-primary container-fluid">Agregar</button>
                                             </div>
                                         </form>
                                     </div>
@@ -152,31 +161,32 @@
                               <th scope="col">Apellido</th>
                               <th scope="col">Direccion</th>
                               <th scope="col">Telefono</th>
+                              <th scope="col">Correo</th>
                                <th scope="col" colspan="2">Opciones</th>
                             </tr>
                          </thead>
                          
                        <tbody>
-                      @foreach(Proveedores proveedor in ViewBag.proveedor)
+                        @foreach(Empleados empleado in ViewBag.empleado)
                         {
                         
                         
                             <tr>
                                 <th scope="row">@v</th>
-                                <td class="text-center">@proveedor.Nombre </td>
-                                <td class="text-center">@proveedor.Apellido </td>
-                                <td class="text-center">@proveedor.Direccion </td>
-                                <td class="text-center">@proveedor.Direccion </td>
-                                <td class="text-center">@proveedor.Telefono </td>
+                                <td class="text-center">@empleado.Nombre</td>
+                                <td class="text-center">@empleado.Apellido</td>
+                                <td class="text-center">@empleado.Direccion</td>
+                                <td class="text-center"> @empleado.Telefono</td>
+                                <td class="text-center">@empleado.Usuario.Correo</td>
                                 <td>
-                                    @Html.ActionLink("","EditProveedor",new{id=@proveedor.ProveedorId},new{@class="bi bi-pencil text-warning btn"}) 
-                                    @Html.ActionLink("","DeleteProveedor",new{id=@proveedor.ProveedorId},new{@class="bi bi-trash3 text-danger btn"})
+                                    @Html.ActionLink("","EditEmpleado",new{id=@empleado.EmpleadoId},new{@class="bi bi-pencil text-warning btn"}) 
+                                    @Html.ActionLink("","DeleteEmpleado",new{id=@empleado.EmpleadoId},new{@class="bi bi-trash3 text-danger btn"})
                                     
                                 </td>
                            </tr> 
                            
-                             v++;
-                        }   
+                            v++;
+                        }
                        </tbody>
                         </table>
 

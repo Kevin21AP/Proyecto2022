@@ -11,7 +11,7 @@ using TiendaOnline.Data;
 namespace TiendaOnline.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20220526174320_Migrations")]
+    [Migration("20220527184454_Migrations")]
     partial class Migrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,6 +34,10 @@ namespace TiendaOnline.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Imagen")
                         .IsRequired()
                         .HasColumnType("longtext");
 

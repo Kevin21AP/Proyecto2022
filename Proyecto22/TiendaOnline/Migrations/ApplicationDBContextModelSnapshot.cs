@@ -35,6 +35,10 @@ namespace TiendaOnline.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Imagen")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("longtext");

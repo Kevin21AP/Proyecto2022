@@ -1,4 +1,4 @@
-﻿
+﻿@model Usuarios
 <div class="container-fluid contedor_login">
     <div class="row justify-content-md-center ">
         <div class="col-sm-4 col_img ">
@@ -12,15 +12,26 @@
                 Login
             </h2>
             <div class="form-text text-center mb-2 texto_login">Bienvenido!!. Inicia Sesion...</div>
-            <form class="row g-3" asp-controller="Cliente" asp-action="Index">
+            @if(@ViewBag.Alerta != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                  <strong>
+                    Error!!
+                  </strong> @ViewBag.Alerta
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+            
+            <form class="row g-3" asp-controller="Login" asp-action="Validar">
                 <div class="mb-3">
                     <label class="form-label fw-bold">Email</label>
-                    <input type="email" class="container-fluid bg-light texto_login" placeholder="Ingrese su correo electrónico">
+                    <input asp-for="Correo" type="email" class="container-fluid bg-light texto_login" placeholder="Ingrese su correo electrónico">
                 </div>
                 <div class="mb-3">
                     <label class="form-label fw-bold">Contraseña</label>
-                    <input type="password" class="container-fluid bg-light texto_login" placeholder="Ingrese su contraseña">
-                    <a asp-area="" class="form-text form_text " asp-controller="Login" asp-action="Login">
+                    <input asp-for="Clave" type="password" class="container-fluid bg-light texto_login" placeholder="Ingrese su contraseña">
+                   
+                    <a asp-area="" class="form-text form_text " asp-controller="Login" asp-action="Registro">
                            ¿Olvidastes tu contraseña?
                        </a> 
                 </div>

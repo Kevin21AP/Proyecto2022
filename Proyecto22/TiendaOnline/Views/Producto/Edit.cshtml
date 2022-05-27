@@ -30,8 +30,16 @@
            <input type="text" asp-for="Precio" class="container-fluid p-2 bg-light" placeholder="Precio">
         </div>
 
+         <div class="form-outline mb-2">
+            <label for="basic-url" class="form-text texto_login container-fluid">URL de la imagen</label>
+            <div class="input-group mb-3">
+                <input type="text" asp-for="Imagen" class="container-fluid" placeholder="https://example.com/imagen/">
+            </div>
+        </div>
+
          <div class="col-md-6 mb-3">
             <div class="form-group mb-3">
+                 <span class="form-text texto_login">Categoria:</span>
                 <select asp-for="CategoriaID" class="form-control" asp-items="@(new SelectList(ViewBag.Categoria,"CategoriaId","Tipo"))">
                     <option class="nav-link disabled">Seleccionar</option>
                 </select>

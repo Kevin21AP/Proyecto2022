@@ -1,0 +1,46 @@
+﻿@model Empleados
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container mb-5">
+  <div class="row justify-content-md-center">
+     <!--------------------------------------- Columna de Editar Registro--------------------------------------->
+    <div class="col-sm-8 ">
+      <form asp-controller="General" asp-action="ActualizarEmpleado" class="row g-3 border border-1 mt-5 p-4">
+             <h3 class=" text-center mx-3 texto_login"> Editar Empleados </h3>
+        
+        <div class="col-md-6 mb-3 mt-3">
+             <input type="hidden" asp-for="EmpleadoId">
+             <span class="form-text texto_login">Articulo:</span>
+            <input type="text" asp-for="Nombre" class="container-fluid p-2 bg-light" placeholder=" Articulo"/>
+        </div>
+
+         <div class="col-md-6 mb-3">
+             <span class="form-text texto_login">Apellido:</span>
+           <input type="text" asp-for="Apellido" class="container-fluid p-2 bg-light" placeholder="Apellido">
+        </div>
+
+         <div class="col-md-6 mb-3">
+           <span class="form-text texto_login">Direccion:</span>
+           <input type="text" asp-for="Direccion" class="container-fluid p-2 bg-light" placeholder="Direccion">
+        </div>
+
+         <div class="col-md-6 mb-3">
+           <span class="form-text texto_login">Telefono:</span>
+           <input type="text" asp-for="Telefono" class="container-fluid p-2 bg-light" placeholder="Telefono">
+        </div>
+
+         <div class="col-md-6 mb-3">
+            <div class="form-group mb-3">
+                <select asp-for="UsuarioID" class="form-control" asp-items="@(new SelectList(ViewBag.usuario,"UsuarioId","Correo"))">
+                    <option class="nav-link disabled">Seleccionar</option>
+                </select>
+            </div>  
+        </div>
+        <div class="container mb-3">
+        <button type="submit" class="btn btn-outline-primary container-fluid">Agregar</button>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>

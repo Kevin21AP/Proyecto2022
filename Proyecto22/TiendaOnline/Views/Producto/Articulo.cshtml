@@ -21,13 +21,13 @@
                                     </a>
                             <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Producto" asp-action="Articulo">
                                         <i class="bi bi-ticket-perforated"></i> <sapan class="mx-2">Articulo</sapan>
                                     </a>
-                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Categoria" asp-action="Categoria">
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Producto" asp-action="Categoria">
                                         <i class="bi bi-bookmark-star"></i> <sapan class="mx-2">Categoria</sapan>
                                     </a>
-                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Producto" asp-action="Proveedor">
                                         <i class="bi bi-truck"></i> <sapan class="mx-2">Proveedor</sapan>
                                     </a>
                                 </nav>
@@ -40,80 +40,35 @@
                             </a>
                             <div class="collapse" id="admin" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admistrar" asp-action="Compra">
                                         <i class="bi bi-minecart"></i> <sapan class="mx-2">Compras</sapan>
                                     </a>
-                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admistrar" asp-action="Venta">
                                         <i class="bi bi-bag-check"></i><sapan class="mx-2">Ventas</sapan>
                                     </a>
-                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admistrar" asp-action="Carrito">
                                         <i class="bi bi-cart"></i> <sapan class="mx-2">Carrito</sapan>
                                     </a> 
                                 </nav>
                             </div>
 
-
-                             <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#general" aria-expanded="false" aria-controls="pagesCollapseError">
-                                <i class="bi bi-card-checklist"></i>  <sapan class="mx-2">General</sapan>
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="general" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Articulo" asp-action="Articulo">
-                                        <i class="bi bi-ticket-perforated"></i> <sapan class="mx-2">Articulo</sapan>
-                                    </a>
-                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
-                                        <i class="bi bi-bookmark-star"></i> <sapan class="mx-2">Categoria</sapan>
-                                    </a>
-                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
-                                        <i class="bi bi-truck"></i> <sapan class="mx-2">Proveedor</sapan>
-                                    </a> 
-                                </nav>
-                            </div>
-
-
-                            <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#depto" aria-expanded="false" aria-controls="pagesCollapseError">
-                                <i class="bi bi-globe2"></i> <sapan class="mx-2">Ubicacion</sapan>
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="depto" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
-                                        <i class="bi bi-geo-alt"></i> <sapan class="mx-2">Departamentos</sapan>
-                                    </a>
-                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
-                                        <i class="bi bi-building"></i> <sapan class="mx-2">Municipio</sapan>
-                                    </a>
-                                     
-                                </nav>
-                            </div>
-
-
                              <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#otros" aria-expanded="false" aria-controls="pagesCollapseError">
-                                <i class="bi bi-boxes"></i>  <sapan class="mx-2">Otros</sapan>
+                                <i class="bi bi-boxes"></i>  <sapan class="mx-2">General</sapan>
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="otros" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="General" asp-action="Cliente">
                                         <i class="bi bi-people"></i> <sapan class="mx-2">Clientes</sapan>
                                     </a>
-                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="General" asp-action="Empleado">
                                         <i class="bi bi-person-bounding-box"></i> <sapan class="mx-2">Empleados</sapan>
                                     </a>
-                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="General" asp-action="Usuario">
                                         <i class="bi bi-person-circle"></i> <sapan class="mx-2">Usuario</sapan>
                                     </a> 
-                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
-                                        <i class="bi bi-person-bounding-box"></i> <sapan class="mx-2">Rol</sapan>
-                                    </a>
                                 </nav>
                             </div>
-
-                            <a class="nav-link text-white-50 fw-bold" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Charts
-                            </a>
                             <a class="nav-link text-white-50 fw-bold" href="tables.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Tables
@@ -163,29 +118,41 @@
 @*                                                <span asp-validation-for="Nombre"></span>*@
                                             </div>
 
-                                            <div class="form-outline mb-3">
+                                            <div class="form-outline mb-2">
                                                 <span class="form-text texto_login">Descripcion:</span>
                                                 <input type="text" asp-for="Descripcion" class="container-fluid p-2 bg-light" placeholder="Descripcion">
                                             </div>
 
-                                            <div class="col-md-6 mb-3">
+                                            <div class="col-md-6 mb-2">
                                                 <span class="form-text texto_login">Cantidad:</span>
                                                 <input type="text" asp-for="Cantidad" class="container-fluid p-2 bg-light" placeholder="Cantidad">
                                             </div>
 
-                                            <div class="col-md-6 mb-3 mt-3">
+                                            <div class="col-md-6 mb-2 mt-3">
                                                 <span class="form-text texto_login">Precio:</span>
                                                 <input type="text" asp-for="Precio" class="container-fluid p-2 bg-light" placeholder="Precio">
                                             </div>
+
+                                            <div class="form-outline mb-2">
+                                                    <label for="basic-url" class="form-text texto_login container-fluid">URL de la imagen</label>
+                                                    <div class="input-group mb-3">
+                                                      <input type="text" asp-for="Imagen" class="container-fluid" placeholder="https://example.com/imagen/">
+                                                    </div>
+                                             </div>
+
                                                 <div class="col-md-6 mb-3">
                                                  
                                                         <div class="form-group mb-3">
+                                                            <span class="form-text texto_login">Categoria:</span>
                                                             <select asp-for="CategoriaID" class="form-control" asp-items="@(new SelectList(ViewBag.Categoria,"CategoriaId","Tipo"))">
                                                                 <option class="nav-link disabled">Seleccionar</option>
                                                             </select>
                                                         </div>  
 
                                                 </div>
+
+                                                
+
                                              <div class="container mb-3">
                                                 <button type="submit" class="btn btn-outline-primary container-fluid">Agregar</button>
                                             </div>
@@ -207,6 +174,7 @@
                               <th scope="col">Cantidad</th>
                               <th scope="col">Precio</th>
                               <th scope="col">Categoria</th>
+                               <th scope="col"></th>
                                <th scope="col" colspan="2">Opciones</th>
                             </tr>
                          </thead>
@@ -223,6 +191,7 @@
                                 <td class="text-center">@articulo.Cantidad</td>
                                 <td class="text-center">$ @articulo.Precio</td>
                                 <td class="text-center">@articulo.Categoria.Tipo</td>
+                                <td class="text-center"><img src="@articulo.Imagen" class="imgCars" alt="..."></td>
                                 <td>
                                     @Html.ActionLink("","Edit",new{id=@articulo.ArticuloId},new{@class="bi bi-pencil text-warning btn"}) 
                                     @Html.ActionLink("","Delete",new{id=@articulo.ArticuloId},new{@class="bi bi-trash3 text-danger btn"})

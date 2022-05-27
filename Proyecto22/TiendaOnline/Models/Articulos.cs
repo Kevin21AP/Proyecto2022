@@ -9,15 +9,12 @@ namespace TiendaOnline.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ArticuloId { get; set; }
-        [Required]
         public int Cantidad { get; set; }
-        [Required]
         public string Nombre { get; set; }
-        [Required]
+
+        public string Imagen { get; set; }
         public string Descripcion { get; set; }
-        [Required]
         public decimal Precio { get; set; }
-        [Required]
         public int CategoriaID { get; set; }
         
         public Categorias Categoria { get; set; }

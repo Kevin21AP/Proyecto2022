@@ -11,7 +11,7 @@ namespace TiendaOnline.Models
         public int CompraId { get; set; }
         public int Cantidad { get; set; }
         public decimal Subtotal { get; set; }
-        public DateTime Fecha { get; set; }
+        public DateTime Fecha { get; set; }=DateTime.Now;
 
         public int ArticuloID { get; set; }
         public int ProveedorID { get; set; }

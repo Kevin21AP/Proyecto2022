@@ -10,7 +10,7 @@ namespace TiendaOnline.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
         public int VentaId { get; set; }
-        public DateTime Fecha { get; set; }
+        public DateTime Fecha { get; set; }=DateTime.Now;
         public int Cantidad { get; set; }
         public decimal SubTotal { get; set; }
 

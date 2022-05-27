@@ -21,21 +21,31 @@ namespace TiendaOnline.Controllers
             _logger = logger;
             _db = db;
         }
-        //public IActionResult Index()
-        //{
-        //    var getInnerjoin = from Clientes in _db.Clientes
-        //                       where Clientes.ClienteId==Clientes.ClienteId
-        //                       select Clientes;
-        //    ViewBag.Clientes = getInnerjoin.Count();
-        //    return View();
-        //}
+        
         public IActionResult Dasboard()
         {
-            var getInnerjoin = from Clientes in _db.Clientes
+            var cliente = from Clientes in _db.Clientes
                                where Clientes.ClienteId == Clientes.ClienteId
                                select Clientes;
-            ViewBag.Clientes = getInnerjoin.Count();
-           
+
+            var empleado = from Empleados in _db.Empleados
+                               where Empleados.EmpleadoId == Empleados.EmpleadoId
+                               select Empleados;
+
+            var proveedor = from Proveedores in _db.Proveedores
+                           where Proveedores.ProveedorId == Proveedores.ProveedorId
+                            select Proveedores;
+
+            var usuario = from Usuarios in _db.Usuarios
+                           where Usuarios.UsuarioId == Usuarios.UsuarioId
+                           select Usuarios;
+
+
+            ViewBag.Clientes = cliente.Count();
+            ViewBag.empleado = empleado.Count();
+            ViewBag.proveedor = proveedor.Count();
+            ViewBag.usuario = usuario.Count();
+
             return View();
         }
     }
