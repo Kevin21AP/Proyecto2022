@@ -1,0 +1,225 @@
+﻿@model Usuarios
+@{
+    int v = 1;
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion color" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                             <div class="sb-sidenav-menu-heading text-black-50 fw-bold">Core</div>
+                             <a asp-area="" class="nav-link text-white-50 fw-bold" asp-controller="Admin" asp-action="Dasboard">
+                                  <i class="fas fa-tachometer-alt"></i> <sapan class="mx-2">Dashboard</sapan>
+                              </a>
+
+
+                             <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        <i class="bi bi-clipboard2-data"></i>  <sapan class="mx-2">Producto</sapan>
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                            <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Articulo" asp-action="Articulo">
+                                        <i class="bi bi-ticket-perforated"></i> <sapan class="mx-2">Articulo</sapan>
+                                    </a>
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Categoria" asp-action="Categoria">
+                                        <i class="bi bi-bookmark-star"></i> <sapan class="mx-2">Categoria</sapan>
+                                    </a>
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Proveedor" asp-action="Proveedor">
+                                        <i class="bi bi-truck"></i> <sapan class="mx-2">Proveedor</sapan>
+                                    </a>
+                                </nav>
+                            </div>
+
+
+                             <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#admin" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <i class="bi bi-file-spreadsheet"></i><sapan class="mx-2">Administrar</sapan>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="admin" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                        <i class="bi bi-minecart"></i> <sapan class="mx-2">Compras</sapan>
+                                    </a>
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Venta" asp-action="Venta">
+                                        <i class="bi bi-bag-check"></i><sapan class="mx-2">Ventas</sapan>
+                                    </a>
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                        <i class="bi bi-cart"></i> <sapan class="mx-2">Carrito</sapan>
+                                    </a> 
+                                </nav>
+                            </div>
+
+
+                             <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#general" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <i class="bi bi-card-checklist"></i>  <sapan class="mx-2">General</sapan>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="general" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Articulo" asp-action="Articulo">
+                                        <i class="bi bi-ticket-perforated"></i> <sapan class="mx-2">Articulo</sapan>
+                                    </a>
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                        <i class="bi bi-bookmark-star"></i> <sapan class="mx-2">Categoria</sapan>
+                                    </a>
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Proveedor" asp-action="Proveedor">
+                                        <i class="bi bi-truck"></i> <sapan class="mx-2">Proveedor</sapan>
+                                    </a> 
+                                </nav>
+                            </div>
+
+
+                            <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#depto" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <i class="bi bi-globe2"></i> <sapan class="mx-2">Ubicacion</sapan>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="depto" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                        <i class="bi bi-geo-alt"></i> <sapan class="mx-2">Departamentos</sapan>
+                                    </a>
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                        <i class="bi bi-building"></i> <sapan class="mx-2">Municipio</sapan>
+                                    </a>
+                                     
+                                </nav>
+                            </div>
+
+
+                             <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#otros" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <i class="bi bi-boxes"></i>  <sapan class="mx-2">Otros</sapan>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="otros" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                        <i class="bi bi-people"></i> <sapan class="mx-2">Clientes</sapan>
+                                    </a>
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                        <i class="bi bi-person-bounding-box"></i> <sapan class="mx-2">Empleados</sapan>
+                                    </a>
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                        <i class="bi bi-person-circle"></i> <sapan class="mx-2">Usuario</sapan>
+                                    </a> 
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admin" asp-action="Dasboard">
+                                        <i class="bi bi-person-bounding-box"></i> <sapan class="mx-2">Rol</sapan>
+                                    </a>
+                                </nav>
+                            </div>
+
+                            <a class="nav-link text-white-50 fw-bold" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Charts
+                            </a>
+                            <a class="nav-link text-white-50 fw-bold" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tables
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content" class="container">
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4 text-black-50">Listado de Usuarios</h1>
+                        <ol class="breadcrumb mb-4">
+                           <li class="breadcrumb-item ">
+                                <a asp-area="" class="text-black-50" asp-controller="Admin" asp-action="Dasboard">
+                                    <i class="bi bi-speedometer2"></i><sapan class="mx-2">Dashboard</sapan>
+                                </a> 
+                           </li>
+                        </ol>
+
+                        @*---------------- Listado de Proveedor ------------------------------------------- *@
+                     <div class="container-fluid">
+                      @*   ----------------------- Modal para Agregar ------------------------*@
+
+                      <!-- Button trigger modal -->
+                            <button type="submit" class="btn btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              Agregar
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                     <h3 class=" text-center mx-3 texto_login">Agregar Usuarios</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+
+                                   @* ------------------------- Formulario ------------------------------*@
+                                    
+                                   <div class="col-sm">
+                                            <form asp-controller="General" asp-action="GuardarUsuario" class="row g-3 p-1">
+                                            <div class="form-outline mb-3 mt-3">
+                                                <span class="form-text texto_login">Correo:</span>
+                                                <input type="email" asp-for="Correo" class="container-fluid p-2 bg-light" placeholder=" Correo "/>
+@*                                                <span asp-validation-for="Nombre"></span>*@
+                                            </div>
+
+                                            <div class="form-outline mb-3">
+                                                <span class="form-text texto_login">Clave:</span>
+                                                <input type="text" asp-for="Clave" class="container-fluid p-2 bg-light" placeholder="Clave">
+                                            </div>
+
+                                             <div class="form-outline mb-3">
+                                                <span class="form-text texto_login">Rol:</span>
+                                                <input type="text" asp-for="Rol" class="container-fluid p-2 bg-light" placeholder="Rol">
+                                            </div>
+
+                                             <div class="container mb-3">
+                                                <button type="submit" class="btn btn-outline-primary mt-auto" >Guardar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                   @* ----------------------- fin de formulario -------------------------*@
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                     @* -------------------------------- Fin Modal ------------------------------------*@
+                        <table class="table table-striped table-responsive text-center" id="tablaArticulo">
+                         <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Correo</th>
+                              <th scope="col">Clave</th>
+                              <th scope="col">Rol</th>
+                              <th scope="col" colspan="2">Opciones</th>
+                            </tr>
+                         </thead>
+                         
+                       <tbody>
+                      @foreach(Usuarios user in ViewBag.usuario)
+                        {
+                        
+                        
+                            <tr>
+                                <th scope="row">@v</th>
+                                <td class="text-center">@user.Correo </td>
+                                <td class="text-center">@user.Clave </td>
+                                <td class="text-center">@user.Rol </td>
+                                <td>
+                                    @Html.ActionLink("","EditUsuario",new{id=@user.UsuarioId},new{@class="bi bi-pencil text-warning btn"}) 
+                                    @Html.ActionLink("","DeleteUsuario",new{id=@user.UsuarioId},new{@class="bi bi-trash3 text-danger btn"})
+                                    
+                                </td>
+                           </tr> 
+                           
+                             v++;
+                        }   
+                       </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                </main>
+            </div>
+        </div> 

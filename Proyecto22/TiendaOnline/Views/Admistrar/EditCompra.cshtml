@@ -1,0 +1,51 @@
+﻿@model Compras
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container mb-5">
+  <div class="row justify-content-md-center">
+     <!--------------------------------------- Columna de Editar Registro--------------------------------------->
+    <div class="col-sm-8 ">
+      <form asp-controller="Admistrar" asp-action="ActualizarCompra" class="row g-3 border border-1 mt-5 p-4">
+             <h3 class=" text-center mx-3 texto_login"> Editar Ventas </h3>
+
+         <div class="col-md-6 mb-3">
+            <div class="form-group mb-3">
+                <input type="hidden" asp-for="CompraId">
+                <span class="form-text texto_login">Articulo:</span>
+                <select asp-for="ArticuloID" class="form-control" asp-items="@(new SelectList(ViewBag.Articulo,"ArticuloId","Nombre"))">
+                    <option class="nav-link disabled">Seleccionar</option>
+                </select>
+            </div>  
+        </div>
+
+                  
+    <div class="col-md-6 mb-3">
+            <div class="form-group mb-3">
+                <span class="form-text texto_login">Proveedor:</span>
+                <select asp-for="ProveedorID" class="form-control" asp-items="@(new SelectList(ViewBag.proveedor,"ProveedorId","Nombre"))">
+                    <option class="nav-link disabled">Seleccionar</option>
+                </select>
+            </div>  
+    </div>
+
+    <div class="col-md-6 mb-3">
+            <div class="form-group mb-3">
+                <span class="form-text texto_login">Empleado:</span>
+                <select asp-for="EmpleadoID" class="form-control" asp-items="@(new SelectList(ViewBag.Empleado,"EmpleadoId","Nombre"))">
+                    <option class="nav-link disabled">Seleccionar</option>
+                </select>
+            </div>  
+    </div>
+
+    <div class="form-outline mb-3">
+    <span class="form-text texto_login">Fecha:</span>
+    <input type="datetime-local" asp-for="Fecha" class=" p-2 bg-light">
+    </div>
+        <div class="container mb-3">
+        <button type="submit" class="btn btn-outline-primary container-fluid">Agregar</button>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>

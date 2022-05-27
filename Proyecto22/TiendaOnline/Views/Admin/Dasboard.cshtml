@@ -1,0 +1,160 @@
+﻿@model List<TiendaOnline.Models.Clientes>
+@{
+     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion color" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                             <div class="sb-sidenav-menu-heading text-black-50 fw-bold">Core</div>
+                             <a asp-area="" class="nav-link text-white-50 fw-bold" asp-controller="Admin" asp-action="Dasboard">
+                                  <i class="fas fa-tachometer-alt"></i> <sapan class="mx-2">Dashboard</sapan>
+                              </a>
+
+
+                             <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        <i class="bi bi-clipboard2-data"></i>  <sapan class="mx-2">Producto</sapan>
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                            <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Producto" asp-action="Articulo">
+                                        <i class="bi bi-ticket-perforated"></i> <sapan class="mx-2">Articulo</sapan>
+                                    </a>
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Producto" asp-action="Categoria">
+                                        <i class="bi bi-bookmark-star"></i> <sapan class="mx-2">Categoria</sapan>
+                                    </a>
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Producto" asp-action="Proveedor">
+                                        <i class="bi bi-truck"></i> <sapan class="mx-2">Proveedor</sapan>
+                                    </a>
+                                </nav>
+                            </div>
+
+
+                             <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#admin" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <i class="bi bi-file-spreadsheet"></i><sapan class="mx-2">Administrar</sapan>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="admin" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admistrar" asp-action="Compra">
+                                        <i class="bi bi-minecart"></i> <sapan class="mx-2">Compras</sapan>
+                                    </a>
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="Admistrar" asp-action="Venta">
+                                        <i class="bi bi-bag-check"></i><sapan class="mx-2">Ventas</sapan>
+                                    </a>
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="Admistrar" asp-action="Carrito">
+                                        <i class="bi bi-cart"></i> <sapan class="mx-2">Carrito</sapan>
+                                    </a> 
+                                </nav>
+                            </div>
+
+                             <a class="nav-link collapsed text-white-50 fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#otros" aria-expanded="false" aria-controls="pagesCollapseError">
+                                <i class="bi bi-boxes"></i>  <sapan class="mx-2">General</sapan>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="otros" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="General" asp-action="Cliente">
+                                        <i class="bi bi-people"></i> <sapan class="mx-2">Clientes</sapan>
+                                    </a>
+                                     <a asp-area="" class="nav-link text-white-50" asp-controller="General" asp-action="Empleado">
+                                        <i class="bi bi-person-bounding-box"></i> <sapan class="mx-2">Empleados</sapan>
+                                    </a>
+                                      <a asp-area="" class="nav-link text-white-50" asp-controller="General" asp-action="Usuario">
+                                        <i class="bi bi-person-circle"></i> <sapan class="mx-2">Usuario</sapan>
+                                    </a> 
+                                </nav>
+                            </div>
+
+                            <a class="nav-link text-white-50 fw-bold" href="charts.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                                Charts
+                            </a>
+                            <a class="nav-link text-white-50 fw-bold" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Tables
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content" class="container">
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">Tablero Principal</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Static Navigation</li>
+                        </ol>
+                           <div class="row">
+                              
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-primary text-white mb-4">
+                                   
+                                    @if(ViewBag.Clientes != null)
+                                        {
+                                            <div class="card-header text-black-50 text-center">@ViewBag.Clientes</div>
+                                        }
+                                        else
+                                        {
+                                            <div class="card-header text-black-50 text-center">0</div>
+                                        }
+                                     <div class="card-body text-center">Clientes</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">Empleado</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                    <div class="card-body">Proveedor</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="Proveedor/Proveedor">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">Usuario</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+@*                        <table class="table table-striped">
+                         <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">First</th>
+                              <th scope="col">Last</th>
+                              <th scope="col">Handle</th>
+                            </tr>
+                         </thead>
+                         <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                             
+                            </tr>
+                        </tbody>
+                        </table>*@
+                    </div>
+                </main>
+            </div>
+        </div>  

@@ -1,0 +1,34 @@
+﻿@model Usuarios
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container mb-5">
+  <div class="row justify-content-md-center">
+     <!--------------------------------------- Columna de Editar Registro--------------------------------------->
+    <div class="col-sm-8 ">
+      <form asp-controller="General" asp-action="ActualizarUsuario" class="row g-3 border border-1 mt-5 p-4">
+             <h3 class=" text-center mx-3 texto_login"> Editar Uusario </h3>
+        
+        <div class="col-md-6 mb-3 mt-3">
+             <input type="hidden" asp-for="UsuarioId">
+             <span class="form-text texto_login">Email:</span>
+            <input type="email" asp-for="Correo" class="container-fluid p-2 bg-light" placeholder=" Correo"/>
+        </div>
+
+         <div class="col-md-6 mb-3">
+             <span class="form-text texto_login">Clave:</span>
+           <input type="text" asp-for="Clave" class="container-fluid p-2 bg-light" placeholder="Contraseña">
+        </div>
+
+        <div class="col-md-6 mb-3">
+             <span class="form-text texto_login">Rol:</span>
+           <input type="text" asp-for="Rol" class="container-fluid p-2 bg-light" placeholder="Rol">
+        </div>
+        
+        <div class="container mb-3">
+        <button type="submit" class="btn btn-outline-primary container-fluid">Agregar</button>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>

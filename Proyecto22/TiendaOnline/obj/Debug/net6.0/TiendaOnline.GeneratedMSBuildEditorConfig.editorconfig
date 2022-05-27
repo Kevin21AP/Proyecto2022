@@ -1,0 +1,152 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TiendaOnline
+build_property.RootNamespace = TiendaOnline
+build_property.ProjectDir = C:\Users\DELL_3340\Desktop\AplicadaII\Proyecto22\TiendaOnline\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\DELL_3340\Desktop\AplicadaII\Proyecto22\TiendaOnline
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Admin/Dasboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Admistrar/Carrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaXN0cmFyXENhcnJpdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Admistrar/Compra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaXN0cmFyXENvbXByYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Admistrar/EditCarrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaXN0cmFyXEVkaXRDYXJyaXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Admistrar/EditCompra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaXN0cmFyXEVkaXRDb21wcmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Admistrar/EditVenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaXN0cmFyXEVkaXRWZW50YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Admistrar/Venta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaXN0cmFyXFZlbnRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Cliente/Carrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYXJyaXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Cliente/VerProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxWZXJQcm9kdWN0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/General/Cliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbFxDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/General/EditCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbFxFZGl0Q2xpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/General/EditUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbFxFZGl0VXN1YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/General/Usuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJhbFxVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Login/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Producto/Articulo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQXJ0aWN1bG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Producto/Categoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ2F0ZWdvcmlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Producto/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Producto/EditCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdENhdGVnb3JpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Producto/EditProveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdFByb3ZlZWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Producto/Proveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cUHJvdmVlZG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Shared/_LayoutCarrito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDYXJyaXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Shared/_LayoutCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Shared/_LayoutIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/Venta/Venta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFcVmVudGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DELL_3340/Desktop/AplicadaII/Proyecto22/TiendaOnline/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,116 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    margin-left: 0%;
+}
+.pedido-carrito{
+    margin-top:2%;
+}
+/*------------------ Estilo del layoutPrincipal -----------------------------*/
+.barra1 {
+    background-color: #192E5B;
+}
+.color {
+    background-color: #1D65A6;
+}
+.borde_nav {
+    border:1px solid #72A2C0;
+}
+
+.logo {
+    height: 40px;
+    width: 200px;
+}
+input {
+    outline: none;
+    padding: 5px;
+    border: 1px solid #72A2C0;
+}
+
+.col_img {
+    background-color: #1D65A6;
+}
+.imagen_login {
+    height: 310px;
+    width: 310px;
+}
+.b_login {
+    background-color: #ADC4D5;
+}
+.contedor_login {
+    margin-top: 10%;
+}
+.texto_login {
+    color: #72A2C0;
+}
+.form_text {
+    font-size: 0.8em;
+}
+.registrarse{
+    text-decoration:none;
+    color:#1D65A6;
+    font-size:0.9em;
+}
+.btnlogin {
+    border-radius: 20px;
+    background-color: #1D65A6;
+    color: #fff;
+}
+.btnlogin:hover {
+    background-color: #192E5B;
+    color: #fff;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+.cantidad, .btn_buscar {
+    border: 1px solid #f2f2f2;
+    background-color: #192E5B;
+    color: #F2A104;
+}
+.carrito {
+    border: 1px solid #192E5B;
+    background-color: #192E5B;
+    color: #F2A104;
+}
+.carrito:hover {
+    border: 1px solid #f2f2f2;
+}
+.header_index {
+    background-color: #1D65A6;
+}
+.icono_menu2 {
+    color: #063852;
+}
+.redes:hover {
+    color: #f2f2f2;
+}
+.nav-seccion {
+    color: #383E41;
+}
+.nav-seccion:hover {
+    color: #808D93;
+}
+
+.search {
+    border: 1px solid #E1E1E1;
+    border-radius: 1px;
+}
+.menu_2 {
+    border-bottom: 1px solid #D4D4D4;
+}

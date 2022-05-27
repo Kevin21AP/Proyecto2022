@@ -1,0 +1,46 @@
+﻿@model Articulos
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container mb-5">
+  <div class="row justify-content-md-center">
+     <!--------------------------------------- Columna de Editar Registro--------------------------------------->
+    <div class="col-sm-8 ">
+      <form asp-controller="Producto" asp-action="Actualizar" class="row g-3 border border-1 mt-5 p-4">
+             <h3 class=" text-center mx-3 texto_login"> Editar Articulo </h3>
+        
+        <div class="col-md-6 mb-3 mt-3">
+             <input type="hidden" asp-for="ArticuloId">
+             <span class="form-text texto_login">Articulo:</span>
+            <input type="text" asp-for="Nombre" class="container-fluid p-2 bg-light" placeholder=" Articulo"/>
+        </div>
+
+         <div class="col-md-6 mb-3">
+             <span class="form-text texto_login">Descripcion:</span>
+           <input type="text" asp-for="Descripcion" class="container-fluid p-2 bg-light" placeholder="Descripcion">
+        </div>
+
+         <div class="col-md-6 mb-3">
+           <span class="form-text texto_login">Cantidad:</span>
+           <input type="text" asp-for="Cantidad" class="container-fluid p-2 bg-light" placeholder="Cantidad">
+        </div>
+
+         <div class="col-md-6 mb-3">
+           <span class="form-text texto_login">Precio:</span>
+           <input type="text" asp-for="Precio" class="container-fluid p-2 bg-light" placeholder="Precio">
+        </div>
+
+         <div class="col-md-6 mb-3">
+            <div class="form-group mb-3">
+                <select asp-for="CategoriaID" class="form-control" asp-items="@(new SelectList(ViewBag.Categoria,"CategoriaId","Tipo"))">
+                    <option class="nav-link disabled">Seleccionar</option>
+                </select>
+            </div>  
+        </div>
+        <div class="container mb-3">
+        <button type="submit" class="btn btn-outline-primary container-fluid">Agregar</button>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>

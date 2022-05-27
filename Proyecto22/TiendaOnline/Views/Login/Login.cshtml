@@ -1,0 +1,34 @@
+﻿
+<div class="container-fluid contedor_login">
+    <div class="row justify-content-md-center ">
+        <div class="col-sm-4 col_img ">
+        <div class="text-center">
+            <img src="~/img/login.svg" class="img-fluid imagen_login" alt="...">
+        </div>
+        </div>
+
+        <div class="col-sm-5 border border-1 p-4 texto_login">
+            <h2 class="text-center fw-bold ">
+                Login
+            </h2>
+            <div class="form-text text-center mb-2 texto_login">Bienvenido!!. Inicia Sesion...</div>
+            <form class="row g-3" asp-controller="Cliente" asp-action="Index">
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Email</label>
+                    <input type="email" class="container-fluid bg-light texto_login" placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Contraseña</label>
+                    <input type="password" class="container-fluid bg-light texto_login" placeholder="Ingrese su contraseña">
+                    <a asp-area="" class="form-text form_text " asp-controller="Login" asp-action="Login">
+                           ¿Olvidastes tu contraseña?
+                       </a> 
+                </div>
+                <button type="submit" class="container-fluid btnlogin border border-0 p-1">Ingresar</button>
+            </form>
+            <a asp-area="" class="registrarse fw-bold  text-end" asp-controller="Login" asp-action="Registro">
+                Registrate
+            </a>
+        </div>
+    </div>
+</div>

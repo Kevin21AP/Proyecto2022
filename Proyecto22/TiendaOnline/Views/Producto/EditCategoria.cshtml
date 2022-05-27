@@ -1,0 +1,29 @@
+﻿@model Categorias
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container mb-5">
+  <div class="row justify-content-md-center">
+     <!--------------------------------------- Columna de Editar Registro--------------------------------------->
+    <div class="col-sm-8 ">
+      <form asp-controller="Producto" asp-action="ActualizarCategoria" class="row g-3 border border-1 mt-5 p-4">
+             <h3 class=" text-center mx-3 texto_login"> Editar Categoria </h3>
+        
+        <div class="col-md-6 mb-3 mt-3">
+             <input type="hidden" asp-for="CategoriaId">
+             <span class="form-text texto_login">Nombre:</span>
+            <input type="text" asp-for="Tipo" class="container-fluid p-2 bg-light" placeholder=" Categoria"/>
+        </div>
+
+         <div class="col-md-6 mb-3">
+             <span class="form-text texto_login">Descripcion:</span>
+           <input type="text" asp-for="Descripcion" class="container-fluid p-2 bg-light" placeholder="Descripcion">
+        </div>
+        
+        <div class="container mb-3">
+        <button type="submit" class="btn btn-outline-primary container-fluid">Agregar</button>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>
